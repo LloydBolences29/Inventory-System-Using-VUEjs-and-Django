@@ -6,21 +6,23 @@ export default defineComponent({
   setup() {
     // Composition API logic goes here
     return () => (
-        <div id="login-container">
-            <div id="login-wrapper">
-                <div id="login-header-container">
-                    <h1 id="login-header">Welcome to the Login Page</h1>
-                </div>
-                <div id="login-form">
-                    <form id="form">
-                        <input type="text" placeholder="Username" />
-                        <input type="password" placeholder="Password" />
-                        <button type="submit">Login</button>
-                    </form>
+      <div id="login-container">
+        <div id="login-wrapper">
+          <div id="login-header-container">
+            <h1 id="login-header">Welcome to the Login Page</h1>
+          </div>
+          <div id="login-form">
+            <form id="form">
+              <input type="text" id="username-input" placeholder="Username" />
+              <input type="password" id="password-input" placeholder="Password" />
+            </form>
+          </div>
 
-                </div>
-            </div>
+          <div id="button-div">
+            <button type="submit" id="login-button">Login</button>
+          </div>
         </div>
+      </div>
     );
   },
 });
